@@ -12,15 +12,19 @@ function Roster(){
     },[])
 
     const wrestlerCards = rosterData.map((wrestler) => 
-    <Grid container spacing={2}>
-        <Grid item xs={12}>
-    <RosterCard wrestler={wrestler} key={wrestler.id}/>
+    <Grid container
+    direction="row"
+    justify-content="space-evenly"
+    spacing={3}>
+        <Grid container item xs={20}>
+            <RosterCard wrestler={wrestler} key={wrestler.id}/>
         </Grid>
     </Grid>
     )
 
     return(
         <div>
+            <h1>AEW Roster</h1>
            {wrestlerCards} 
         </div>
     )

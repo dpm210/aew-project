@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1f1f21;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,17 +43,21 @@
   color: white;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');
 .nickname{
   position: absolute;
   top: -20px;
   left: 20px;
   font-size: 12px;
+  font-family: 'Advent Pro', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
 .name{
     position: absolute;
     top: -10px;
     left: 20px;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .record{
@@ -61,4 +65,26 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Advent Pro', sans-serif;
+  border: 6px solid black;
+  background-color: black;
+}
+
+.wrestler-image{
+  height: 300px;
+  width: 300px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+
+}
+
+li{
+  display: inline;
+  float: left;
+  padding: 8px;
 }
