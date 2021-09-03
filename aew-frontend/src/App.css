@@ -41,6 +41,7 @@
   position: relative;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');

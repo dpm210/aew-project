@@ -4,6 +4,7 @@ import RosterCard from './RosterCard'
 function Roster(){
     //set states
     const [rosterData, setRosterData] = useState([])
+    const [tagData, setTagData] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:3000/wrestlers')
@@ -12,20 +13,17 @@ function Roster(){
     },[])
 
     const wrestlerCards = rosterData.map((wrestler) => 
-    <Grid container
-    direction="row"
-    justify-content="space-evenly"
-    spacing={3}>
-        <Grid container item xs={20}>
-            <RosterCard wrestler={wrestler} key={wrestler.id}/>
+        <Grid container item xs={12} sm={3}>
+            <RosterCard wrestler={wrestler} tagData={tagData} key={wrestler.id}/>
         </Grid>
-    </Grid>
     )
 
     return(
         <div>
-            <h1>AEW Roster</h1>
+        <h1>AEW Roster</h1>
+        <Grid container spacing={1}>
            {wrestlerCards} 
+        </Grid>
         </div>
     )
 }
