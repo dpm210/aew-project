@@ -8,6 +8,7 @@ import Home from './components/Home'
 import NavBar from './components/NavBar'
 import Roster from './components/Roster'
 import Events from './components/Events'
+import WrestlerPage from './components/WrestlerPage';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
         {/* <Router> */}
         <NavBar />
         <Events />
+        {/* <WrestlerPage /> */}
+
 
       {/* <Switch> */}
 

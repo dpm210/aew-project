@@ -10,8 +10,7 @@ function Events(){
         .then(eventData => setEvents(eventData))
     },[])
 
-    const eventCards = events.map((event) => 
-        <EventCard event={event} key={event.id}/>)
+    const eventCards = events.map((event) => <EventCard event={event} key={event.id}/>)
 
     return(
         <div>
