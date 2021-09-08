@@ -1,7 +1,10 @@
+import { Link, useHistory } from 'react-router-dom'
 function RosterCard({wrestler}){
+    // const history = useHistory()
 
     function handleClick(){
         sessionStorage.setItem('wrestler_id', wrestler.id)
+        // history.push('/WrestlerPage')
     }
 
     return(

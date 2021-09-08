@@ -89,3 +89,24 @@ li{
   float: left;
   padding: 8px;
 }
+
+.aew-logo{
+  height: 90px;
+  width: 150px;
+}
+
+.events-container{
+  
+}
+
+.event-info{
+  color: black;
+  background-color: white;
+  height: 200px;
+  width: 300px;
+}
+
+.event-image{
+  height: 200px;
+  width: 300px;
+}
