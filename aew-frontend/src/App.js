@@ -18,7 +18,7 @@ function App() {
         {/* <Router> */}
         <NavBar />
         {/* <Events /> */}
-        <WrestlerPage />
+        {/* <WrestlerPage /> */}
 
 
       {/* <Switch> */}
@@ -28,7 +28,7 @@ function App() {
         {/* </Route> */}
 
         {/* <Route path="roster"> */}
-          {/* <Roster /> */}
+          <Roster />
         {/* </Route> */}
 
       {/* </Switch> */}
