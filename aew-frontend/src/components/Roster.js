@@ -8,6 +8,8 @@ function Roster(){
     const [champData, setChampData] = useState([])
     const [tagData, setTagData] = useState([])
 
+    document.title = "AEW Roster"
+
     useEffect(() => {
         fetch('http://localhost:3000/wrestlers')
         .then(res => res.json())
@@ -35,10 +37,12 @@ function Roster(){
     return(
         <div>
         <h1>AEW Roster</h1>
+        <div className='roster-list'>
         <Grid container spacing={1}>
             {championshipCards}
            {wrestlerCards} 
         </Grid>
+        </div>
         </div>
     )
 }
