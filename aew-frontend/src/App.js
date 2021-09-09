@@ -17,8 +17,8 @@ function App() {
       <header className="App-header">
         {/* <Router> */}
         <NavBar />
-        <Events />
-        {/* <WrestlerPage /> */}
+        {/* <Events /> */}
+        <WrestlerPage />
 
 
       {/* <Switch> */}

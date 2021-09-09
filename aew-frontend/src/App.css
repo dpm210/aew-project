@@ -102,7 +102,7 @@ li{
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .event-info{
-  float: left;
+  float: right;
   padding: 20px;
   color: black;
   background-color: white;
@@ -114,4 +114,18 @@ li{
 .event-image{
   height: 200px;
   width: 300px;
+}
+
+.wrestler-page-image{
+  height: 320px;
+  width: 320px;
+  border: rgb(185, 158, 69) solid 1px
+}
+
+.wrestler-stats{
+  float: right;
+  margin-left: 20px;
+  color: black;
+  background-color: white;
+  width: 500px;
 }

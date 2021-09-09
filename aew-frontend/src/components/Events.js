@@ -10,10 +10,14 @@ function Events(){
         .then(eventData => setEvents(eventData))
     },[])
 
-    const eventCards = events.map((event) => <EventCard event={event} key={event.id}/>)
+    //PPV Filter and Card Mapping
+    const filteredEvents = events.filter(event => event.program === 'ppv')
+    const eventCards = filteredEvents.map((event) => <EventCard event={event} key={event.id}/>)
+    
 
     return(
         <div>
+            <h1>Events</h1>
             {eventCards}
         </div>
     )
