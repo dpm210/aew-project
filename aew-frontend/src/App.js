@@ -9,6 +9,7 @@ import NavBar from './components/NavBar'
 import Roster from './components/Roster'
 import Events from './components/Events'
 import WrestlerPage from './components/WrestlerPage';
+import ChampionshipPage from './components/ChampionshipPage'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <NavBar />
         {/* <Events /> */}
         {/* <WrestlerPage /> */}
+        <ChampionshipPage />
 
 
       {/* <Switch> */}
@@ -28,7 +30,7 @@ function App() {
         {/* </Route> */}
 
         {/* <Route path="roster"> */}
-          <Roster />
+          {/* <Roster /> */}
         {/* </Route> */}
 
       {/* </Switch> */}

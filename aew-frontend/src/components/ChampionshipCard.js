@@ -3,7 +3,7 @@ function ChampionshipCard({champ}){
     // const history = useHistory()
 
     function handleClick(){
-        sessionStorage.setItem('championship_id', champ.name)
+        sessionStorage.setItem('championship_id', champ.id)
     }
 
     return(
